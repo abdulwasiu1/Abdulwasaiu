@@ -1,0 +1,38 @@
+KSA COORDINATE EXPLORER V3 — VALIDATION
+16 September 2026
+
+Opened index.html directly using a file URL in Edge/Chromium with the browser
+context OFFLINE. No Codex runtime, launcher or server was used by the app.
+No HTTP/HTTPS requests or JavaScript errors were observed during the tests.
+
+Passed checks:
+- OpenStreetMap checkbox is enabled, initially checked, and toggles correctly.
+- Embedded regional road paths and city labels render offline.
+- Visible background city labels did not intersect in the checked default view.
+- Boundary zoom, station zoom, keyboard map pan and keyboard zoom.
+- Coordinate grid, selected velocity vector and magnified difference toggles.
+- All 210 station options, search and missing-reference presentation.
+- RY99 default CSV result parity: +26.71/-9.32/+5.19 mm East/North/Up.
+- CSV/SINEX reference selection and reference-only formal uncertainty note.
+- Sources & calculations; component provenance; modal close controls.
+- Published global/plate-fixed views; plate-fixed rigid model gives zero.
+- Synthetic event contributes +25 mm East at 2025.0 as specified.
+- Epoch entry, playback, pause, speed selection and reset.
+- Model epoch comparison and CSV/SVG downloads.
+- Exported SVG parses and renders, retains offline OSM vectors and attribution.
+- Reduced motion disables playback while leaving manual epoch control available.
+
+Responsive checks: supplied, published and illustrative views at widths 1600,
+1366, 1280, 960, 520, 390 and 320 pixels: 21 states. No horizontal page overflow
+or out-of-viewport controls/coordinate values were detected in these states.
+Desktop, mobile, station close-up and exported-SVG screenshots were inspected.
+
+The ZIP was extracted into a separate test folder, then the same full browser
+checks were repeated on its index.html. SHA-256 checks confirmed that packaged
+and source index.html files were identical.
+
+Limits: regional OSM motorway/trunk/city subset only; not all local streets or
+the full online tile style. Optional source links need internet. Employer policy
+may still block local HTML or JavaScript. Tests do not establish survey accuracy,
+official approval, completeness of the OSM data or all-browser compatibility.
+Demonstration only — not for survey or operational use.

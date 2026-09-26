@@ -1,0 +1,29 @@
+MAP ACKNOWLEDGEMENTS
+
+OpenStreetMap regional data: © OpenStreetMap contributors.
+Available under the Open Data Commons Open Database License (ODbL) v1.0:
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+The full licence is included as ODbL-1.0.txt.
+
+The OSM-derived subset in OSM_Regional_Extract.geojson and the embedded map
+database are offered under ODbL v1.0. Preserve attribution and licence notices
+when redistributing them. The separate geodetic coordinate inputs are not OSM
+data and are not relicensed by this notice.
+
+OSM retrieval: Overpass API, https://overpass-api.de/api/interpreter
+Query: [out:json][timeout:45];(way["highway"~"^(motorway|trunk)$"](16,34,33,56);
+node["place"="city"](12,25,38,62););out geom;
+OSM database timestamp: 2026-09-16T19:52:02Z.
+The retrieved subset was converted to GeoJSON. Road geometry was simplified by
+Douglas–Peucker with tolerance 0.00035 degrees for display. Only named city
+points are retained. Display paths use Web Mercator and rounded world positions.
+This is a limited regional subset, not a complete city/street or navigation map.
+No raster tiles from tile.openstreetmap.org were downloaded into this package.
+
+Country outlines: Natural Earth, 1:50m cartographic data, public domain.
+https://www.naturalearthdata.com/about/terms-of-use/
+The Saudi outline is not an authoritative survey boundary or supplied shapefile.
+
+The application combines these sources for visual context. Roads/cities and
+country outlines do not determine the geodetic coordinate calculations.

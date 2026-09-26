@@ -1,0 +1,11 @@
+{
+  "name": "ksa-coordinate-explorer",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Standalone offline Saudi geodetic coordinate explorer",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "check": "node scripts/build.cjs --check"
+  },
+  "engines": { "node": ">=18" }
+}
